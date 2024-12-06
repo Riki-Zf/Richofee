@@ -1,0 +1,26 @@
+.thumbnail {
+  width: 85%; /* Menentukan lebar container */
+  height: 400px; /* Tinggi tetap */
+  margin: 20px auto; /* Agar berada di tengah */
+  overflow: hidden; /* Memotong gambar yang keluar dari container */
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5); /* Warna hitam semi-transparan */
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Membuat gambar sesuai dengan ukuran container */
+}
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Posisi teks di tengah secara vertikal */
+  left: 50%; /* Posisi teks di tengah secara horizontal */
+  transform: translate(-50%, -50%);
+  color: white; /* Warna teks */
+  font-size: 60px; /* Ukuran font */
+  font-weight: bold; /* Teks tebal */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+  text-align: center;
+}
